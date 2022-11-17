@@ -1,3 +1,188 @@
-nav {
-    font-family: sans-serif;
+:root {
+    --beige: #f8ceb2;
+    --orange-main: #a85534;
+    --green-dark: #042423;
+    --green-medium: #0a3e33;
+    --green-light: #0b554b;
+    --off-white: #F9E7CF;
+    --nav: #E4B495;
+}
+
+@font-face {
+    font-family: Brittany;
+    src: url(../assets/fonts/BrittanySignature.ttf);
+}
+
+@font-face {
+    font-family: PTSerif;
+    src: url(../assets/fonts/PTSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: Baskerville;
+    src: url(../assets/fonts/Baskervville-Regular.ttf);
+}
+
+body {
+    background-color: var(--beige);
+    color: var(--orange-main);
+    margin: 0;
+    display: block;
+}
+
+#intro {
+    font-family: Brittany;
+    font-size: 45pt;
+}
+
+
+#nav {
+    background-color: var(--nav);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#nav li {
+    float: right;
+}
+
+li {
+    position: relative;
+    padding: 14px 14px;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--orange-main);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14pt;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.row {
+    display: flex;
+    margin: auto;
+    padding: 50px;
+}
+
+.column {
+    flex: 100%;
+    position: relative;
+    width: 50%;
+}
+
+.white {
+    background-color: var(--off-white);
+    color: var(--green-light);
+    margin: 0;
+}
+
+.org {
+    background-color: var(--orange-main);
+    text-align: center;
+    color: var(--beige);
+    margin: 0;
+}
+
+.grn {
+    background-color: var(--green-medium);
+    text-align: center;
+    color: var(--off-white);
+    margin: 0;
+}
+
+img {
+    width: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 90%;
+}
+
+.icon:hover {
+    width: 55%;
+}
+
+h1,
+h2 {
+    padding-top: 20px;
+    font-family: Baskerville;
+}
+
+h1 {
+    font-size: 45pt;
+}
+
+h2 {
+    font-size: 25pt;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    font-size: 17pt;
+    color: var(--green-light);
+    margin: 0;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13pt;
+}
+
+.main {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.line {
+    width: 90%;
+    border: 1px solid var(--green-medium);
+    margin: auto;
+}
+
+button {
+    background-color: var(--beige);
+    height: 50px;
+    border: none;
+}
+
+.skew {
+    transform: skewY(3deg);
+    background-color: white;
+}
+
+.unskew {
+    transform: skewY(-3deg);
+}
+
+a,
+button {
+    color: var(--green-light);
+    background-color: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.enlarge:hover {
+    padding-left: 10px;
 }
