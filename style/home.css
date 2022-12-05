@@ -179,6 +179,10 @@ button {
     background-color: inherit;
 }
 
+.white a {
+    color: var(--orange-main);
+}
+
 button:hover {
     cursor: pointer;
 }
