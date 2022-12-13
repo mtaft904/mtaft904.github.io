@@ -119,8 +119,7 @@ img {
 }
 
 .hobby img {
-    aspect-ratio: 4/3;
-
+    width: 100%;
 }
 
 .contact:hover {
@@ -225,10 +224,7 @@ figure img {
     padding-right: 10%;
 }
 
-.home {
-    margin-bottom: 0;
-    width: 5%
-}
+
 
 
 @media screen and (max-width: 768px) {
